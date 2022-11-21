@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6</title>
+</head>
+<body>
+<span>Your bonus is</span>
+<span id="output"></span>
+<span>%</span>
+</body>
+<script>
+    let turnover = +prompt("Enter the number of product bought: ");
+    if (turnover <= 10){
+        document.getElementById('output').innerHTML = turnover * 5 / 100;
+    } else if (turnover <= 30){
+        document.getElementById('output').innerHTML = turnover * 7 / 100;
+    } else {
+        document.getElementById('output').innerHTML = turnover * 10 / 100;
+    }
+</script>
+</html>
