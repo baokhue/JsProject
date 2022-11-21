@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Theme</title>
+</head>
+<body>
+<table cellspacing="17px" style="border: black solid">
+    <tr>
+        <th colspan="4" align="left">
+            <input type="text" id="calcell">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="type1('1')" id="type1">1</button>
+        </th>
+        <th>
+            <button type="button" onclick="type2()" id="type2">2</button>
+        </th>
+        <th>
+            <button type="button" onclick="type3()" id="type3">3</button>
+        </th>
+        <th>
+            <button type="button" onclick="plus()" id="plus">+</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="type4()" id="type4">4</button>
+        </th>
+        <th>
+            <button type="button" onclick="type5()" id="type5">5</button>
+        </th>
+        <th>
+            <button type="button" onclick="type6()" id="type6">6</button>
+        </th>
+        <th>
+            <button type="button" onclick="minus()" id="minus">-</button>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="type7()" id="type7">7</button>
+        </th>
+        <th>
+            <button type="button" onclick="type8()" id="type8">8</button>
+        </th>
+        <th>
+            <button type="button" onclick="type9()" id="type9">9</button>
+        </th>
+        <th>
+            <button type="button" onclick="multi()" id="multi">x</button>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="ret()" id="delete">C</button>
+        </th>
+        <th>
+            <button type="button" onclick="type0()" id="type">0</button>
+        </th>
+        <th>
+            <button type="button" onclick="calculate()" id="show">=</button>
+        </th>
+        <th>
+            <button type="button" onclick="divide()" id="divide">/</button>
+    </tr>
+</table>
+</body>
+<script>
+    function type1(value) {
+        document.getElementById('calcell').value = value;
+    }
+</script>
+</html>

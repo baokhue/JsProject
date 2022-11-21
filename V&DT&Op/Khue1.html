@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input type="number" id="inp1">
+            <input type="number" id="inp2">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button id="adt" onclick="addition()" value="Addition">Addition(+)</button>
+            <button id="stt" onclick="subtraction()" value="Subtraction">Subtraction(-)</button>
+            <button id="mtlct" onclick="multiplication()" value="Multiplication">Multiplication(x)</button>
+            <button id="dvs" onclick="division()" value="Division">Division(/)</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span>Result <span id="outpBtn"></span></span>:
+            <span id="outp"></span>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+    /*var input1 = +document.getElementById("inp1").value;
+    var input2 = +document.getElementById("inp2").value;*/
+    function addition() {
+        var outBtn1 = document.getElementById("adt").value;
+        var input1 = +document.getElementById("inp1").value;
+        var input2 = +document.getElementById("inp2").value;
+        var resultAdd = input1 + input2;
+        document.getElementById("outp").innerHTML = resultAdd;
+        document.getElementById("outpBtn").innerHTML = outBtn1;
+    }function subtraction() {
+        var outBtn2 = document.getElementById("stt").value;
+        var input1 = +document.getElementById("inp1").value;
+        var input2 = +document.getElementById("inp2").value;
+        var resultSub = input1 - input2;
+        document.getElementById("outp").innerHTML = resultSub;
+        document.getElementById("outpBtn").innerHTML = outBtn2;
+    }function multiplication() {
+        var outBtn3 = document.getElementById("mtlct").value;
+        var input1 = +document.getElementById("inp1").value;
+        var input2 = +document.getElementById("inp2").value;
+        var resultMul = input1 * input2;
+        document.getElementById("outp").innerHTML = resultMul;
+        document.getElementById("outpBtn").innerHTML = outBtn3;
+    }function division() {
+        var outBtn4 = document.getElementById("dvs").value;
+        var input1 = +document.getElementById("inp1").value;
+        var input2 = +document.getElementById("inp2").value;
+        var resultDiv = input1 / input2;
+        document.getElementById("outp").innerHTML = resultDiv;
+        document.getElementById("outpBtn").innerHTML = outBtn4;
+    }
+</script>
+</html>

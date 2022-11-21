@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Exchange</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th align="right">
+            <p>Amount</p>
+        </th>
+        <th></th>
+        <th colspan="3">
+            <p>From Currency</p>
+        </th>
+        <th></th>
+        <th colspan="3">
+            <p>To Currency</p>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="Input">
+        </td>
+        <td></td>
+        <td colspan="3" align="center">
+            <select id="FromCurrency">
+                <option name="Currency" id="VN">VietNam</option>
+                <option name="Currency" id="Usd">USD</option>
+            </select>
+        </td>
+        <td></td>
+        <td colspan="3" align="center">
+            <select id="ToCurrency">
+                <option name="Currency">USD</option>
+                <option name="Currency">VietNam</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="doSth()">Convert</button>
+        </td>
+    </tr>
+</table>
+<br/>
+<span style="color: blue">Result: &nbsp;</span>
+<span style="color: blue" id="Output"></span>
+<span style="color: blue" id="unit"></span>
+</body>
+<script>
+        function doSth() {
+            if (document.getElementById('FromCurrency').value === document.getElementById('VN').value){
+            let amount = +document.getElementById('Input').value / 23000;
+            document.getElementById('Output').innerHTML = amount;
+            document.getElementById('unit').innerHTML = '$';
+        } if (document.getElementById('FromCurrency').value === document.getElementById('Usd').value){
+                let amount = +document.getElementById('Input').value * 23000;
+                document.getElementById('Output').innerHTML = amount;
+                document.getElementById('unit').innerHTML = 'VND';
+            }
+    }
+</script>
+</html>
