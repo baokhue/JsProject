@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+<span>Your BMI is</span>
+<span id="result"></span>
+<span>Kg/m2</span>
+</body>
+<script>
+    let w = +prompt("Enter your weight (kg): ");
+    let h = +prompt("Enter your height (m): ");
+    let bmi = w / (h*h);
+    if (bmi < 18.5){
+        document.getElementById('result').innerHTML = "Underweight!";
+    } else if (bmi < 25.0){
+        document.getElementById('result').innerHTML = "Normal.";
+    } else if (bmi < 30.0){
+        document.getElementById('result').innerHTML = "Overweight!";
+    } else{
+        document.getElementById('result').innerHTML = "Obese!!!";
+    }
+</script>
+</html>
