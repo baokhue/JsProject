@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - 4</title>
+</head>
+<body>
+<span>Enter height</span>
+<input type="number" id="height">
+<br/>
+<span>Enter width</span>
+<input type="number" id="width">
+<br/>
+<button type="button" onclick="getArea()">Get Area</button>
+<br/>
+<span>The area of rectangle is: </span>
+<span id="area"></span>
+<span>cm <sup>2</sup></span>
+</body>
+<script>
+    function getArea(){
+        let a = +document.getElementById('height').value;
+        let b = +document.getElementById('width').value;
+        document.getElementById('area').innerHTML = a * b;
+    }
+</script>
+</html>

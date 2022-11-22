@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - 7</title>
+</head>
+<body>
+<p>The quadratic equation formed: ax<sup>2</sup> + bx + c = 0</p>
+<p>Enter a: </p>
+<input type="number" id="No1">
+<br/>
+<p>Enter b: </p>
+<input type="number" id="No2">
+<br/>
+<p>Enter c: </p>
+<input type="number" id="No3">
+<br/>
+<button type="button" onclick="getResult()">Get x</button>
+<br/>
+<p>
+  <span>x<sub>1</sub> =</span>
+  <span id="result1"></span>
+</p>
+<p>
+  <span>x<sub>2</sub></span>
+  <span id="result2"></span>
+</p>
+</body>
+<script>
+    function getResult(){
+        let a = +document.getElementById('No1').value;
+        let b = +document.getElementById('No2').value;
+        let c = +document.getElementById('No3').value;
+        let d = b*b - 4*a*c;
+        let e = Math.sqrt(d);
+        document.getElementById('result1').innerHTML = (-b + e) / 2 * a;
+        document.getElementById('result2').innerHTML = (-b - e) / 2 * a;
+    }
+</script>
+</html>
