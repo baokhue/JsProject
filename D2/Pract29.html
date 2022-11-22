@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - 9</title>
+</head>
+<body>
+<p>Enter a: </p>
+<input type="number" id="a">
+<br/>
+<p>Enter b: </p>
+<input type="number" id="b">
+<br/>
+<p>Enter c: </p>
+<input type="number" id="c">
+<br/>
+<br/>
+<button type="button" onclick="getresult()">Let's check!</button>
+<br/>
+<p>
+    <span id="rs"></span>
+</p>
+</body>
+<script>
+    function getresult() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        if (a > 0 && b > 0 && c > 0){
+            if ((a + b) > c){
+                if ((b + c) > a){
+                    if ((a + c) > b){
+                        document.getElementById('rs').innerHTML = "They can build a triangle.";
+                    }
+                }
+            }
+        } else {
+            document.getElementById('rs').innerHTML = "They can not build a triangle.";
+        }
+    }
+</script>
+</html>
