@@ -33,10 +33,10 @@
         let c = +document.getElementById('No3').value;
         let d = b*b - 4*a*c;
         let e = Math.sqrt(d);
-        if (e < 0){
+        if (d < 0){
             document.getElementById('result1').innerHTML = "This is the NULL equation.";
             document.getElementById('result2').innerHTML = "This is the NULL equation.";
-        } else if (e === 0){
+        } else if (d === 0){
             document.getElementById('result1').innerHTML = -(b / 2 * a);
             document.getElementById('result2').innerHTML = -(b / 2 * a);
         } else{
