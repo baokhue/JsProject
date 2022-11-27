@@ -19,15 +19,18 @@
     function showPrice() {
         let w = +document.getElementById('number').value;
         if (w > 0 && w <= 50){
-            document.getElementById('price').innerHTML = w * (1 + 339 / 500);
+            document.getElementById('price').innerHTML = w * 1678;
         } else if (w <= 100){
-            document.getElementById('price').innerHTML = w * (1 + 367 / 500);
+            document.getElementById('price').innerHTML = w * 1734;
         } else if (w <= 200){
-            document.getElementById('price').innerHTML = w * (2 + 7 / 500);
+            document.getElementById('price').innerHTML = w * 2014;
         } else if (w <= 300){
-            document.getElementById('price').innerHTML = w * (2 + 67 /125);
+            document.getElementById('price').innerHTML = w * 2536;
+        } else if (w <= 400) {
+            document.getElementById('price').innerHTML = w * 2834;
         } else {
-            document.getElementById('price').innerHTML = w * (2 + 927 / 1000);
+            document.getElementById('price').innerHTML = w * 2927;
+        }
     }
 </script>
 </html>
