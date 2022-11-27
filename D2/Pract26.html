@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - 6</title>
+</head>
+<body>
+<span>The one equation is: ax + b = 0</span>
+<br/>
+<p>Enter a: </p>
+<input type="number" id="no1">
+<br/>
+<p>Enter b: </p>
+<input type="number" id="no2">
+<br/>
+<button type="button" onclick="result()">Get x</button>
+<br/>
+<p>
+  <span>x = </span>
+  <span id="result"></span>
+</p>
+</body>
+<script>
+  function result(){
+    let a = +document.getElementById('no1').value;
+    let b = +document.getElementById('no2').value;
+    document.getElementById('result').innerHTML = -b / a;
+  }
+</script>
+</html>

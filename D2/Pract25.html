@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2 - 5</title>
+</head>
+<body>
+<span>Enter a:&nbsp;&nbsp;</span>
+<input type="number" id="height">
+<br/>
+<span>Enter b: &nbsp;&nbsp;</span>
+<input type="number" id="bottom">
+<br/>
+<button type="button" onclick="Area()">Get Area</button>
+<br/>
+<span>The area of triangle: </span>
+<span id="area"></span>
+<span>cm<sup>2</sup></span>
+</body>
+<script>
+    function Area(){
+        let a = +document.getElementById('height').value;
+        let b = +document.getElementById('bottom').value;
+        document.getElementById('area').innerHTML = (a * b) /2;
+    }
+</script>
+</html>
