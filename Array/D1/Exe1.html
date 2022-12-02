@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Exe1</title>
+</head>
+<body>
+</body>
+<script>
+    //Pract1
+    let myColor = ["Red", "Green", "White", "Black"];
+    document.write(myColor.toString());
+
+    //Pract2
+    let series = prompt("Enter numbers: ");
+    let str = series.toString();
+    let show = [str[0]];
+    let i = 1;
+    while (i < str.length){
+
+        if ((str[i-1] % 2 === 0) && (str[i] % 2 === 0)){
+            show.push("-", str[i]);
+        } else {
+            show.push(str[i]);
+        }
+        i++;
+    }
+    document.write(show.join(''));
+
+    //Pract3
+    let strng = prompt("Enter a sentence: ");
+    let upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let lower = "abcdefghijklmnopqrstuvwxyz";
+    let rs = [];
+    for (let i = 0; i < strng.length; i++) {
+        if (upper.indexOf(strng[i]) !== -1){
+            rs.push(strng[i].toLowerCase());
+        } else if (lower.indexOf(strng[i]) !== -1){
+            rs.push(strng[i].toUpperCase());
+        } else {
+            rs.push(strng[i]);
+        }
+    }
+    document.write(rs.join(''));
+</script>
+</html>
