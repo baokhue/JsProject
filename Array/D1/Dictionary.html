@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<input type="text" name="English" id="Eng">
+<button type="button" onclick="getResult()">Translation</button>
+<p id="result"></p>
+</body>
+<script>
+    function getResult(){
+        let a = ["One", "Two", "Three", "Teacher", "Student"];
+        let b = ["1", "2", "3", "Giáo viên", "Học sinh"];
+        let e = document.getElementById('Eng').value;
+        let d = [e[0]];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < b.length; j++) {
+                if ( e === a.includes([i])) {
+                    document.getElementById("result").innerHTML = d.includes([j]) ;
+                } else {
+                    document.getElementById("result").innerHTML = "a";
+                }
+            }
+        }
+    }
+</script>
+</html>
