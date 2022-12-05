@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 1 - 5</title>
+</head>
+<body>
+</body>
+<script>
+  let arr = [];
+  let count = 0;
+  let k = 0;
+  for (let i = 0; i < 5; i++) {
+    arr[i] = +prompt("Enter numbers: ");
+    if (arr[i] < 0) {
+      count++;
+    }
+  }
+  document.write("There are " + count + " negative integers.");
+</script>
+</html>
