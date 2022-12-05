@@ -9,14 +9,12 @@
 <script>
   let vowel = "u, e, o, a, i";
   let string = prompt("Enter a sentence: ");
-  let result = [];
+  let count = 0;
   for (let i = 0; i < string.length; i++) {
-      if (vowel.indexOf(string[i]) < 0){
-          result.push(string[i]);
-      } else {
-          delete string[i];
+      if (vowel.indexOf(string[i]) !== -1){
+          count++;
       }
   }
-  document.write(result.join(''));
+  document.write("There are " + count + " vowels.");
 </script>
 </html>
