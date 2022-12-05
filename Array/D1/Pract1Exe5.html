@@ -7,14 +7,16 @@
 <body>
 </body>
 <script>
-  let arr = [];
-  let count = 0;
-  for (let i = 0; i < 5; i++) {
-    arr[i] = +prompt("Enter numbers: ");
-    if (arr[i] < 0) {
-      count++;
-    }
+  let vowel = "u, e, o, a, i";
+  let string = prompt("Enter a sentence: ");
+  let result = [];
+  for (let i = 0; i < string.length; i++) {
+      if (vowel.indexOf(string[i]) < 0){
+          result.push(string[i]);
+      } else {
+          delete string[i];
+      }
   }
-  document.write("There are " + count + " negative integers.");
+  document.write(result.join(''));
 </script>
 </html>
