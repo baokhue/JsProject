@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  function searchStar(star) {
+    let arrStar1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrStar2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let index = arrStar1.indexOf(star);
+    if (index < 0) {
+      alert("Không tìm thấy chòm sao tương ứng!");
+    } else {
+      alert("Chòm sao tương ứng là: " + arrStar2[index]);
+    }
+  }
+  let inputStar = prompt("Nhập ngôi sao của bạn: ");
+  searchStar(inputStar);
+</script>
+</html>

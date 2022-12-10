@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  const PI = 3.14;
+  function isArea(r) {
+    let area = (r * r) * PI;
+    document.write("Diện tích hình tròn là: " + area + "<br>");
+  }
+  function isPerimeter(r) {
+    let perimeter = (r * 2) * PI;
+    document.write("Chu vi hình tròn là: " + perimeter);
+  }
+  let inputR = +prompt("Nhập bán kính hình tròn: ");
+  isArea(inputR);
+  isPerimeter(inputR);
+</script>
+</html>
