@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 2- 5</title>
+</head>
+<body>
+</body>
+<script>
+  function checkMin(number1, number2, number3) {
+    if (number1 < number2 && number1 < number3){
+      document.write(number1 + " is min.");
+    } else if (number2 < number3){
+      document.write(number2 + " is min.");
+    } else {
+      document.write(number3 + " is min.");
+    }
+  }
+  let a = +prompt("Enter the 1st number: ");
+  let b = +prompt("Enter the 2nd number: ");
+  let c = +prompt("Enter the 3rd number: ");
+  checkMin(a, b, c);
+</script>
+</html>
