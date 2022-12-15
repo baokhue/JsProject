@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+</body>
+<script>
+  class Temperature {
+    constructor(Celsiusdegree) {
+      this.degree = Celsiusdegree;
+    }
+    getFahrenheit(){
+      return this.degree * 9/ 5 + 32;
+    }
+    getKelvin(){
+      return this.degree + 237 + 3/ 20;
+    }
+  }
+  let temperature = new Temperature(20);
+  document.write("Fahrenheit degree is: " + temperature.getFahrenheit() + "<br>");
+  document.write("Kelvin degree is: " + temperature.getKelvin() + "<br>");
+</script>
+</html>
